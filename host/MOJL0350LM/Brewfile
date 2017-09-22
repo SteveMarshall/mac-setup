@@ -1,0 +1,28 @@
+cask_args appdir: '~/Applications'
+
+# Development tools
+mas "Xcode", id: 497799835
+brew "swiftlint"
+cask "vagrant"
+cask "virtualbox"
+
+# Browsers
+cask "google-chrome"
+cask "firefox"
+
+# Work
+mas "Things3", id: 904280696
+mas "Pages", id: 409201541
+mas "Numbers", id: 409203825
+mas "Keynote", id: 409183694
+mas "Pixelmator", id: 407963104
+
+# "Social" stuff
+cask "adium-beta"
+mas "Tweetbot", id: 557168941
+mas "Reeder", id: 880001334
+cask "Slack"
+
+# Utilities
+cask "moom", args: { appdir: "~/Applications/Utilities" }
+mas "1Blocker", id: 1107421413
