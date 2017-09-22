@@ -1,0 +1,13 @@
+remove Siri
+remove Mail
+remove Contacts
+remove Calendar
+remove Notes
+remove Reminders
+remove Maps
+remove Messages
+remove FaceTime
+remove iBooks
+
+add ~/Applications/TextMate.app after "App Store"
+add /Applications/Utilities/Terminal.app after TextMate

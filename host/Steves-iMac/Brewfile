@@ -1,0 +1,5 @@
+cask_args appdir: '~/Applications'
+
+# Video tools
+cask "subler"
+cask "transmission"
