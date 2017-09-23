@@ -12,6 +12,6 @@ remove iBooks
 remove "App Store"
 add "App Store" after Launchpad
 
-add ~/Applications/TextMate.app after iTunes
-add /Applications/Utilities/Terminal.app after TextMate
-add ~/Applications/Transmission.app after Terminal
+add ~/Applications/TextMate.app after iTunes TextMate
+add /Applications/Utilities/Terminal.app after TextMate Terminal
+add ~/Applications/Transmission.app after Terminal Transmission
