@@ -9,5 +9,8 @@ remove Messages
 remove FaceTime
 remove iBooks
 
-add ~/Applications/TextMate.app after "App Store"
+remove "App Store"
+add "App Store" after Launchpad
+
+add ~/Applications/TextMate.app after iTunes
 add /Applications/Utilities/Terminal.app after TextMate
