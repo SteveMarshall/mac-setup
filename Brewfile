@@ -1,3 +1,5 @@
+cask_args appdir: '~/Applications'
+
 tap 'caskroom/versions'
 
 # Ruby env
