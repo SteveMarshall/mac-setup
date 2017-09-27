@@ -1,6 +1,7 @@
 #!/bin/bash
 
-cd
+pushd ~ > /dev/null
+
 if [[ ! -d ~/.git ]]; then
     git clone git@github.com:SteveMarshall/homedir.git
     chflags hidden ~/homedir/*
@@ -9,3 +10,5 @@ if [[ ! -d ~/.git ]]; then
 else
     git pull
 fi
+
+popd > /dev/null
