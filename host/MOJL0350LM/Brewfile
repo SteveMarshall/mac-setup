@@ -3,6 +3,7 @@ cask_args appdir: '~/Applications'
 # Development tools
 mas "Xcode", id: 497799835
 brew "swiftlint"
+cask "transmit"
 cask "vagrant"
 cask "virtualbox"
 
