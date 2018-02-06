@@ -19,7 +19,7 @@ mas "Keynote", id: 409183694
 mas "Pixelmator", id: 407963104
 
 # "Social" stuff
-cask "adium-beta"
+cask "adium"
 mas "Tweetbot", id: 557168941
 mas "Reeder", id: 880001334
 cask "Slack"
