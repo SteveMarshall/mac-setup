@@ -23,4 +23,5 @@ finalisation.
 ```bash
 curl -O https://raw.githubusercontent.com/norm/suited/master/suited.sh 
 bash suited.sh github:SteveMarshall/suit:initial_setup.conf
+suited github:SteveMarshall/suit:main.conf
 ```
