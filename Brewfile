@@ -14,4 +14,4 @@ brew "hub"
 cask "textmate"
 cask "bonjour-browser", args: { appdir: "~/Applications/Utilities" }
 # gpgtools can't install to a custom location :(
-cask "gpgtools-beta"
+cask "gpg-suite-beta"
