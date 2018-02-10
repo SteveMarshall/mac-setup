@@ -18,7 +18,22 @@ Once logged in, open System Preferences and:
 Log out, then back in as `Steven`, signing into iCloud during the
 finalisation.
 
-## Running `suited`
+## Set up GitHub SSH keys
+
+1. Create an SSH key for the new device:
+
+    ```bash
+    ssh-keygen -trsa -b4096 -C "$USER@$HOST" -f ~/.ssh/id_rsa
+    ssh-add ~/.ssh/id_rsa
+    ```
+2. Copy the SSH key to the clipboard:
+
+    ```bash
+    pbcopy < ~/.ssh/id_rsa.pub
+    ```
+3. [Add the new SSH key on GitHub](https://github.com/settings/keys)
+
+## Run `suited`
 
 ```bash
 curl -O https://raw.githubusercontent.com/norm/suited/master/suited.sh 
