@@ -15,3 +15,4 @@ cask "textmate"
 cask "bonjour-browser", args: { appdir: "~/Applications/Utilities" }
 # gpgtools can't install to a custom location :(
 cask "gpg-suite-beta"
+mas "Amphetamine", id: 937984704
