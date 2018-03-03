@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ruby_version=`cat ~/.ruby-version`
-if [[ ! -d ~/.rubies/$ruby_version ]]; then
-    ruby-install $ruby_version
-    ~/.rubies/$ruby_version/bin/gem install bundler
-fi
+ruby-install --no-reinstall $ruby_version
+for ruby in ~/.rubies/$ruby_version*; do
+  $ruby/bin/gem install bundler
+done
