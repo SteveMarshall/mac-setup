@@ -27,3 +27,4 @@ cask "Slack"
 # Utilities
 cask "moom", args: { appdir: "~/Applications/Utilities" }
 mas "1Blocker", id: 1107421413
+cask "choosy"
