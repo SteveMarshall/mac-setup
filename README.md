@@ -35,8 +35,15 @@ finalisation.
 
 ## Run `suited`
 
+Make sure you've `export`ed values for `BACKBLAZE_USER` and
+`BACKBLAZE_PASSWORD` and then run:
+
 ```bash
 curl -O https://raw.githubusercontent.com/norm/suited/master/suited.sh 
 bash suited.sh github:SteveMarshall/suit:initial_setup.conf
 suited github:SteveMarshall/suit:main.conf
 ```
+
+## Post-`suited` manual steps
+
+- Set [Backblaze's Private Encryption Key](https://help.backblaze.com/hc/en-us/articles/217666268-Security-Settings-Mac-)

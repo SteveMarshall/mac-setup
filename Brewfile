@@ -11,6 +11,7 @@ brew "bash-completion"
 brew "hub"
 
 # Utilities
+cask "backblaze"
 cask "textmate"
 cask "bonjour-browser", args: { appdir: "~/Applications/Utilities" }
 # gpgtools can't install to a custom location :(
