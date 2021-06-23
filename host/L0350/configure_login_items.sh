@@ -9,9 +9,6 @@ tell application \"System Events\"
   make login item at end with properties { \
     path: \"$HOME/Applications/Utilities/Moom.app\" \
   }
-  make login item at end with properties { \
-    path: \"$HOME/Library/PreferencePanes/Choosy.prefPane/Contents/Resources/Choosy.app\" \
-  }
   \"Updated login items\"
 end tell
 "

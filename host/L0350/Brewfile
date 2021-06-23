@@ -2,10 +2,12 @@ cask_args appdir: '~/Applications'
 
 # Development tools
 mas "Xcode", id: 497799835
-brew "swiftlint"
 cask "transmit"
 cask "vagrant"
 cask "virtualbox"
+brew "jq"
+brew "oath-toolkit"
+brew "imagemagick"
 
 # Browsers
 cask "google-chrome"
@@ -19,12 +21,12 @@ mas "Keynote", id: 409183694
 mas "Pixelmator", id: 407963104
 
 # "Social" stuff
-cask "adium"
-mas "Tweetbot", id: 557168941
-mas "Reeder", id: 880001334
-cask "Slack"
+mas "Tweetbot", id: 1384080005
+mas "Slack", id: 803453959
 
 # Utilities
 cask "moom", args: { appdir: "~/Applications/Utilities" }
-mas "1Blocker", id: 1107421413
-cask "choosy"
+cask "airbuddy", args: { appdir: "~/Applications/Utilities" }
+cask "choosy", args: { appdir: "~/Applications/Utilities" }
+mas "1Blocker", id: 1365531024
+cask "mailtrackerblocker"

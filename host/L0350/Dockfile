@@ -8,9 +8,10 @@ remove iTunes
 remove iBooks
 remove "App Store"
 remove "System Preferences"
+remove "Podcasts"
+remove "TV"
 
-add ~/Applications/Things3.app after Reminders Things
-add ~/Applications/Slack.app after Messages Slack
-add ~/Applications/Adium.app after Slack Adium
-add ~/Applications/TextMate.app after Adium TextMate
-add /Applications/Utilities/Terminal.app after TextMate Terminal
+# add ~/Applications/Things3.app after Reminders Things
+add /Applications/Slack.app after Messages Slack
+add ~/Applications/TextMate.app after Slack TextMate
+add /System/Applications/Utilities/Terminal.app after TextMate Terminal
