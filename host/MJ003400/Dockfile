@@ -10,8 +10,14 @@ remove "App Store"
 remove "System Preferences"
 remove "Podcasts"
 remove "TV"
+remove "Music"
+remove "News"
+remove "Keynote"
+remove "Numbers"
+remove "Pages"
 
-# add ~/Applications/Things3.app after Reminders Things
+add ~/Applications/Things3Beta.app after Reminders Things
 add /Applications/Slack.app after Messages Slack
-add ~/Applications/TextMate.app after Slack TextMate
-add /System/Applications/Utilities/Terminal.app after TextMate Terminal
+add ~/Applications/TextMate.app after Things TextMate
+add /Applications/Xcode.app after TextMate Xcode
+add /System/Applications/Utilities/Terminal.app after Xcode Terminal
