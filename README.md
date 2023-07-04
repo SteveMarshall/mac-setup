@@ -1,7 +1,6 @@
 # Setting up a new Mac
 
-The setup for my computers, for use with
-[suited](https://github.com/norm/suited).
+The setup for my computer.
 
 ## Account setup
 
@@ -33,17 +32,15 @@ finalisation.
     ```
 3. [Add the new SSH key on GitHub](https://github.com/settings/keys)
 
-## Run `suited`
+## Run `setup.sh`
 
 Make sure you've `export`ed values for `BACKBLAZE_USER` and
 `BACKBLAZE_PASSWORD` and then run:
 
 ```bash
-curl -O https://raw.githubusercontent.com/norm/suited/master/suited.sh 
-bash suited.sh github:SteveMarshall/suit:initial_setup.conf
-suited github:SteveMarshall/suit:main.conf
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/SteveMarshall/mac-setup/main/setup.sh)"
 ```
 
-## Post-`suited` manual steps
+## Post-`setup` manual steps
 
 - Set [Backblaze's Private Encryption Key](https://help.backblaze.com/hc/en-us/articles/217666268-Security-Settings-Mac-)
