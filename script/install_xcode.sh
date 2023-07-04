@@ -23,3 +23,7 @@ devdir=$( xcode-select -print-path 2>/dev/null || true )
         xcode-select --install
     fi
 }
+
+if /usr/bin/xcrun clang 2>&1 | grep license; then
+    sudo xcodebuild -license accept
+fi
