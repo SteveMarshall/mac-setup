@@ -6,6 +6,7 @@ github_root="${GITHUB_ROOT:-https://raw.githubusercontent.com/SteveMarshall/mac-
 script_location=$( [ -z "${BASH_SOURCE[0]}" ] && echo "remote" || echo "local" )
 
 scripts=(
+  "script/install_xcode.sh"
   "script/install_homebrew.sh"
   "script/configure_homedir.sh"
   "script/configure_backblaze.sh"
