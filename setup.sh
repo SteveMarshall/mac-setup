@@ -9,6 +9,7 @@ scripts=(
   "script/install_xcode.sh"
   "script/install_homebrew.sh"
   "script/configure_homedir.sh"
+  "script/configure_repos.sh"
   "script/configure_backblaze.sh"
 )
 
