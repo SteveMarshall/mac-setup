@@ -35,7 +35,8 @@ finalisation.
 ## Run `setup.sh`
 
 Make sure you've `export`ed values for `BACKBLAZE_USER` and
-`BACKBLAZE_PASSWORD` and then run:
+`BACKBLAZE_PASSWORD`, and a `MACHINE_TYPE` of either `dev` or `server`,
+as appropriate, and then run:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/SteveMarshall/mac-setup/main/setup.sh)"

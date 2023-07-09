@@ -1,8 +1,15 @@
 #!/bin/bash
 set -e
 
+GITHUB_ROOT="${GITHUB_ROOT:-https://raw.githubusercontent.com/SteveMarshall/mac-setup/main}"
+
+# Expects one of dev or server
+if [ "dev" != "${MACHINE_TYPE}" -a "server" != "${MACHINE_TYPE}" ]; then
+  echo "No value set for \${MACHINE_TYPE}. \
+specify \`dev\` or \`server\` if necessary." >&2
+fi
+
 curl_temp_file=$( mktemp '/tmp/mac-setup.curl.XXXXX' )
-github_root="${GITHUB_ROOT:-https://raw.githubusercontent.com/SteveMarshall/mac-setup/main}"
 script_location=$( [ -z "${BASH_SOURCE[0]}" ] && echo "remote" || echo "local" )
 
 scripts=(
@@ -20,7 +27,7 @@ function get_script {
   local script="$2"
 
   if [[ "remote" == "${location}" ]]; then
-    curl -sSL "${github_root}/${script}" > "${curl_temp_file}"
+    curl -sSL "${GITHUB_ROOT}/${script}" > "${curl_temp_file}"
     echo "${curl_temp_file}"
     return
   fi

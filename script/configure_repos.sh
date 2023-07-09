@@ -30,3 +30,7 @@ function clone_repo {
 clone_repo "SteveMarshall/mac-setup" "~/Developer/Personal/mac-setup"
 clone_repo "SteveMarshall/macos_defaults" "~/etc/macos/defaults"
 clone_repo "SteveMarshall/TextMate-application-support" "~/Library/Application Support/TextMate"
+
+if [ "dev" == "${MACHINE_TYPE}" ]; then
+  clone_repo "SteveMarshall/xctemplates" "~/Library/Developer/Xcode/Templates"
+fi
