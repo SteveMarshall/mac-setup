@@ -7,6 +7,12 @@ brewfiles=(
   "Brewfile"
 )
 
+if [ -f "machine-type/${MACHINE_TYPE}/Brewfile" ]; then
+  brewfiles+=(
+    "machine-type/${MACHINE_TYPE}/Brewfile"
+  )
+fi
+
 function get_brewfile {
   local location="$1"
   local brewfile="$2"

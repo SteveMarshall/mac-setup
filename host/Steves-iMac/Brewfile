@@ -1,9 +1,0 @@
-cask_args appdir: '~/Applications'
-
-# Video tools
-cask "subler"
-cask "transmission"
-brew "handbrake"
-brew "ffmpeg"
-brew "mkvtoolnix"
-brew "mp4v2"
