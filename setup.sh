@@ -19,6 +19,7 @@ scripts=(
   "script/software_update.sh"
   "script/configure_homedir.sh"
   "script/configure_repos.sh"
+  "script/configure_dock.sh"
   "script/configure_backblaze.sh"
 )
 
