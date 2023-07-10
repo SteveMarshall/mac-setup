@@ -28,39 +28,32 @@ function get_dockfile {
 function process_dockfile_line {
   local command="$1"
   local app="$2"
-  local rel="$3"
-  local rel_app="$4"
-  local replacing="$5"
+  local alias="$3"
 
   case "$command" in
     add)
-      if [ -z "$replacing" ]; then
-        replacing="$app"
-      fi
-
       case "$app" in
         /*) ;;
         *)  app="/Applications/$app.app"
             ;;
       esac
 
-      if [ -n "$rel" ]; then
+      if [ -n "$alias" ]; then
         dockutil \
           --add "$app" \
-          --$rel "$rel_app" \
-          --replacing $replacing \
+          --label "$alias" \
           --no-restart \
           || true
       else
         dockutil \
           --add "$app" \
-          --replacing $replacing \
           --no-restart \
           || true
       fi
       ;;
 
     remove)
+      echo "Removing $app"
       dockutil --remove "$app" --no-restart \
         >/dev/null  # not being in the dock is not an error
       ;;
@@ -69,7 +62,7 @@ function process_dockfile_line {
       # comment or blank line, ignore
       ;;
 
-    *)  status "Unknown action $command: $@"
+    *)  echo "Unknown action $command: $@"
       ;;
   esac
 }
