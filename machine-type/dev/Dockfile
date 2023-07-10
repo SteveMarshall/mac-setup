@@ -1,23 +1,17 @@
-remove Siri
-remove Launchpad
-remove Contacts
-remove Maps
-remove Photos
-remove FaceTime
-remove iTunes
-remove iBooks
-remove "App Store"
-remove "System Preferences"
-remove "Podcasts"
-remove "TV"
-remove "Music"
-remove "News"
-remove "Keynote"
-remove "Numbers"
-remove "Pages"
+remove all
 
-add ~/Applications/Things3Beta.app after Reminders Things
-add /Applications/Slack.app after Messages Slack
-add ~/Applications/TextMate.app after Things TextMate
-add /Applications/Xcode.app after TextMate Xcode
-add /System/Applications/Utilities/Terminal.app after Xcode Terminal
+add /System/Cryptexes/App/System/Applications/Safari.app
+add Mail
+add Calendar
+add Reminders
+add /Users/Steven/Applications/Things3Beta.app
+add Notes
+add Messages
+add Slack
+add "Microsoft Teams"
+add /Users/Steven/Applications/TextMate.app
+add /Applications/Utilities/Terminal.app
+add Xcode
+add "RectLabel Pro"
+
+add "/Users/Steven/Downloads/"
