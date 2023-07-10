@@ -1,7 +1,7 @@
 #!/bin/bash
 
 type -t dockutil >/dev/null \
-  || brew install --cask dockutil
+  || brew install --cask hpedrorodrigues/tools/dockutil
 
 github_root="${GITHUB_ROOT:-https://raw.githubusercontent.com/SteveMarshall/mac-setup/main}"
 script_location=$( [ -z "${BASH_SOURCE[0]}" ] && echo "remote" || echo "local" )
