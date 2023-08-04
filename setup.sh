@@ -9,7 +9,6 @@ if [ "dev" != "${MACHINE_TYPE}" -a "server" != "${MACHINE_TYPE}" ]; then
 specify \`dev\` or \`server\` if necessary." >&2
 fi
 
-curl_temp_file=$( mktemp '/tmp/mac-setup.curl.XXXXX' )
 script_location=$( [ -z "${BASH_SOURCE[0]}" ] && echo "remote" || echo "local" )
 
 scripts=(
@@ -28,6 +27,7 @@ function get_script {
   local script="$2"
 
   if [[ "remote" == "${location}" ]]; then
+    curl_temp_file=$( mktemp -t mac-setup.curl.XXXXX )
     curl -sSL "${GITHUB_ROOT}/${script}" > "${curl_temp_file}"
     echo "${curl_temp_file}"
     return
