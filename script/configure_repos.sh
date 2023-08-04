@@ -22,6 +22,7 @@ function clone_repo {
   if [ -f "${destination}/script/bootstrap" ]; then
     echo "Initialising ${repo} in ${destination}"
     pushd "${destination}" > /dev/null
+    PATH="./bin:${PATH}"
     ./script/bootstrap
     popd > /dev/null
   fi
