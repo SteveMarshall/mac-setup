@@ -1,6 +1,6 @@
 #!/bin/bash
 
-local -a required_dirs=(Homebrew Cellar Frameworks bin etc include lib opt sbin share var)
+required_dirs=(Homebrew Cellar Frameworks bin etc include lib opt sbin share var)
 
 if ! type -t brew >/dev/null; then
     status 'Install homebrew'
