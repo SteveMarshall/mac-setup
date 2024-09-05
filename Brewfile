@@ -2,6 +2,7 @@ cask_args appdir: '~/Applications'
 
 # Terminal stuff
 brew "hub"
+brew "fileicon"
 
 # Utilities
 cask "backblaze"

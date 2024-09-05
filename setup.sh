@@ -21,6 +21,7 @@ scripts=(
   "script/configure_dock.sh"
   "script/configure_login_items.sh"
   "script/configure_backblaze.sh"
+  "script/configure_custom_icons.sh"
 )
 
 function get_script {
