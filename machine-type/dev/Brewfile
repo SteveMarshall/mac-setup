@@ -6,6 +6,9 @@ mas "Developer", id: 640199958
 cask "sf-symbols"
 mas "RectLabel", id: 1490990105
 mas "TestFlight", id: 899247664
+cask "vagrant"
+cask "virtualbox"
+cask "firefox"
 
 # Work
 mas "Pages", id: 409201541
@@ -23,7 +26,6 @@ mas "Streaks", id: 963034692
 mas "Noir", id: 1592917505
 cask "airbuddy", args: { appdir: "~/Applications/Utilities" }
 cask "choosy", args: { appdir: "~/Applications/Utilities" }
-cask "mailtrackerblocker"
 
 # Installed via TestFlight:
 # mas "Things3", id: 904280696

@@ -4,14 +4,12 @@ add /System/Cryptexes/App/System/Applications/Safari.app
 add Mail
 add Calendar
 add Reminders
-add /Users/Steven/Applications/Things3Beta.app "Thingsᵝ"
+add Things3 Things
 add Notes
 add Messages
 add Slack
-add "Microsoft Teams"
 add /Users/Steven/Applications/TextMate.app
 add /Applications/Utilities/Terminal.app
 add Xcode
-add "RectLabel Pro"
 
 add "/Users/Steven/Downloads/"
