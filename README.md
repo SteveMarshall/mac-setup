@@ -45,3 +45,26 @@ as appropriate, and then run:
 ## Post-`setup` manual steps
 
 - Set [Backblaze's Private Encryption Key](https://help.backblaze.com/hc/en-us/articles/217666268-Security-Settings-Mac-)
+
+### Create new GPG keys
+
+1. From a device with my primary key:
+  1. Import primary key into keyring: `gpg --import <path to pubkey> <path to privkey>`
+  2. Add a new (signing/encryption) subkey:
+
+    ```bash
+    gpg --edit-key <key-id>
+    gpg> addkey
+    gpg>> <select RSA, 4096, expiration, passphrase>
+    gpg> save
+    ```
+  3. Export the new subkey(s):
+
+    ```bash
+    gpg --export --armor <primary-key-id> > public-key.asc
+    gpg --export-secret-subkeys --armor <subkey-id> > private-subkey-<type>.asc
+    ```
+2. Transfer the `public-key.asc` and `private-subkey-*.asc` to the new
+   machine securely
+3. Import the keys on the target device: `gpg --import public-key.asc secret-subkey-*.asc`
+4. [Add the new GPG key (contents of `public-key.asc`) on GitHub](https://github.com/settings/keys)
