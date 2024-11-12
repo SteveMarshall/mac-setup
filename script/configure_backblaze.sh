@@ -6,7 +6,7 @@ if [ ! -d /Library/Backblaze.bzpkg ]; then
     exit -1
   fi
 
-  BACKBLAZE_INSTALLER=`brew --prefix`/Caskroom/backblaze/latest/Backblaze\ Installer.app
-  sudo $BACKBLAZE_INSTALLER/Contents/MacOS/bzinstall_mate  -nogui \
-    -signinaccount $BACKBLAZE_USER $BACKBLAZE_PASSWORD
+  BACKBLAZE_INSTALLER="$(echo `brew --prefix`/Caskroom/backblaze/*/Backblaze\ Installer.app)"
+  sudo "$BACKBLAZE_INSTALLER/Contents/MacOS/bzinstall_mate"  -nogui \
+    -signinaccount "$BACKBLAZE_USER" "$BACKBLAZE_PASSWORD"
 fi
