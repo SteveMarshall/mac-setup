@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+# Ensure we can refer to brew when it's installed
+PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+
 GITHUB_ROOT="${GITHUB_ROOT:-https://raw.githubusercontent.com/SteveMarshall/mac-setup/main}"
 
 # Expects one of dev or server
