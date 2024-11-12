@@ -12,3 +12,9 @@ cask "moom", args: { appdir: "~/Applications/Utilities" }
 cask "gpg-suite"
 brew "pinentry-mac"
 mas "Amphetamine", id: 937984704
+
+# Fonts
+cask "font-sf-compact"
+cask "font-sf-mono"
+cask "font-sf-pro"
+cask "font-new-york"
